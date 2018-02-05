@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeManagement.Service", "TimeManagement\TimeManagement.Service.csproj", "{37E90A36-3C56-44E2-91E1-B432A077606F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeManagement.Data", "TimeManagement.Data\TimeManagement.Data.csproj", "{C2762C43-956B-4A24-A172-20F91279BCE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeManagement.UnitTest", "TimeManagement.UnitTest\TimeManagement.UnitTest.csproj", "{6C6951ED-55F0-49F7-BC7C-506301DB92E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeManagement.Booking", "TimeManagement.Booking\TimeManagement.Booking.csproj", "{94690C7E-5CC0-428A-A5EB-DD2DF6C7BA0C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37E90A36-3C56-44E2-91E1-B432A077606F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37E90A36-3C56-44E2-91E1-B432A077606F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37E90A36-3C56-44E2-91E1-B432A077606F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37E90A36-3C56-44E2-91E1-B432A077606F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2762C43-956B-4A24-A172-20F91279BCE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2762C43-956B-4A24-A172-20F91279BCE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2762C43-956B-4A24-A172-20F91279BCE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2762C43-956B-4A24-A172-20F91279BCE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C6951ED-55F0-49F7-BC7C-506301DB92E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C6951ED-55F0-49F7-BC7C-506301DB92E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C6951ED-55F0-49F7-BC7C-506301DB92E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C6951ED-55F0-49F7-BC7C-506301DB92E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94690C7E-5CC0-428A-A5EB-DD2DF6C7BA0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94690C7E-5CC0-428A-A5EB-DD2DF6C7BA0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94690C7E-5CC0-428A-A5EB-DD2DF6C7BA0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94690C7E-5CC0-428A-A5EB-DD2DF6C7BA0C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9B778E1-BD7D-4E2B-807E-7CF3DE8442E0}
+	EndGlobalSection
+EndGlobal
