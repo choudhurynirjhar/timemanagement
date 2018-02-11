@@ -21,4 +21,10 @@
     <ProjectReference Include="..\TimeManagement.Data\TimeManagement.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>

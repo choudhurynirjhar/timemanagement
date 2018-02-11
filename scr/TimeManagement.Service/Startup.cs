@@ -21,7 +21,7 @@ namespace TimeManagement
         {
             services.AddMvc();
 
-            var builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appseetings.json");
+            var builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json");
             var config = builder.Build();
 
             services.AddTransient<IEmployeeProvider>(p => new EmployeeProvider(config["ConnectionString:TimeManagement"]));
