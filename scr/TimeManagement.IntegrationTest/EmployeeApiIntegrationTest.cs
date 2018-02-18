@@ -34,7 +34,16 @@ namespace TimeManagement.IntegrationTest
             {
                 var response = await client.PostAsync("/api/employee"
                     , new StringContent(
-                        JsonConvert.SerializeObject(new Employee() { Address = "Test", FirstName = "John", LastName = "Mak", CellPhone = "111-222-3333", HomePhone = "222-333-4444" }), Encoding.UTF8, "application/json"));
+                        JsonConvert.SerializeObject(new Employee()
+                        {
+                            Address = "Test",
+                            FirstName = "John",
+                            LastName = "Mak",
+                            CellPhone = "111-222-3333",
+                            HomePhone = "222-333-4444"
+                        }), 
+                        Encoding.UTF8, 
+                        "application/json"));
 
                 response.EnsureSuccessStatusCode();
 
