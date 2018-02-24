@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeManagement.Service", "T
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeManagement.IntegrationTest", "TimeManagement.IntegrationTest\TimeManagement.IntegrationTest.csproj", "{7694CE12-A1EB-4250-A6AB-1DE7E40A15A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeManagement.Streaming.Consumer", "TimeManagement.Streaming.Consumer\TimeManagement.Streaming.Consumer.csproj", "{B6D1956B-70BE-4A18-82F6-65A3FD30A4C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeManagement.Streaming.Consumer", "TimeManagement.Streaming.Consumer\TimeManagement.Streaming.Consumer.csproj", "{B6D1956B-70BE-4A18-82F6-65A3FD30A4C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeManagement.Streaming.Producer", "TimeManagement.Streaming.Producer\TimeManagement.Streaming.Producer.csproj", "{BE255395-F4B1-48A6-8F32-FA7BC871962C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{B6D1956B-70BE-4A18-82F6-65A3FD30A4C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6D1956B-70BE-4A18-82F6-65A3FD30A4C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6D1956B-70BE-4A18-82F6-65A3FD30A4C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE255395-F4B1-48A6-8F32-FA7BC871962C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE255395-F4B1-48A6-8F32-FA7BC871962C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE255395-F4B1-48A6-8F32-FA7BC871962C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE255395-F4B1-48A6-8F32-FA7BC871962C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
