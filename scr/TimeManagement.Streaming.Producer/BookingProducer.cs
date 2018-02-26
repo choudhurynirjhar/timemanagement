@@ -17,7 +17,7 @@ namespace TimeManagement.Streaming.Producer
             using (var producer = new Producer<Null, string>(config, null, new StringSerializer(Encoding.UTF8)))
             {
                 producer.ProduceAsync("timemanagement_booking", null, message).GetAwaiter().GetResult();
-                producer.Flush(100);
+                producer.Flush(1000);
             }
         }
     }
