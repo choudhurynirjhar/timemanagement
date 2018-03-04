@@ -8,7 +8,16 @@ namespace TimeManagement.Streaming.Consumer
 {
     public class BookingConsumer : IBookingConsumer
     {
-        public void Listen(Action<string> message)
+        private readonly IBookingStream bookingStream;
+        private readonly Action<string> logger;
+
+        public BookingConsumer(IBookingStream bookingStream, Action<string> logger)
+        {
+            this.bookingStream = bookingStream;
+            this.logger = logger;
+        }
+
+        public void Listen()
         {
             var config = new Dictionary<string, object>
             {
@@ -20,10 +29,12 @@ namespace TimeManagement.Streaming.Consumer
             using(var consumer = new Consumer<Null, string>(config, null, new StringDeserializer(Encoding.UTF8)))
             {
                 consumer.Subscribe("timemanagement_booking");
+                logger("Subscribed");
 
                 consumer.OnMessage += (_, msg) => {
-                    message(msg.Value);
+                    bookingStream.Publish(new BookingMessage { Message = msg.Value });
                 };
+                logger("OnMessage attached");
 
                 while (true)
                 {
