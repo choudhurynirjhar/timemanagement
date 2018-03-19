@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="signalr-client-1.0.0-alpha2-final.js"></script>
+
+    <script>
+        var bookingHub = new signalR.HttpConnection('/bookingHub');
+        var bookingHubConnection = new signalR.HubConnection(bookingHub);
+
+        bookingHubConnection.start().catch(err => {
+            console.log('Error in connection' + err);
+        });
+
+        bookingHubConnection.on('booking', (message) => {
+            console.log('Received Message ' + message);
+        });
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

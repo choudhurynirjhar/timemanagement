@@ -17,6 +17,7 @@
   <ItemGroup>
     <ProjectReference Include="..\TimeManagement.Booking\TimeManagement.Booking.csproj" />
     <ProjectReference Include="..\TimeManagement.Data\TimeManagement.Data.csproj" />
+    <ProjectReference Include="..\TimeManagement.Streaming.Consumer\TimeManagement.Streaming.Consumer.csproj" />
   </ItemGroup>
 
 </Project>
